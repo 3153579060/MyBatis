@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <mapper namespace="com.mybatis.mapper.userMapper">
+        <insert id="serUesr">
+                insert into listname values (null,'张三','103',23,'女','317960@qq.com')
+        </insert>
+        <update id="selectUesr">
+             update listname set usename=#{arg0} where id=#{arg1};
+        </update>
+        <insert id="serUsesrr">
+                insert into listname values (#{id},#{usename},#{password},#{age},#{sex}, #{email})
+        </insert>
+        </mapper>
